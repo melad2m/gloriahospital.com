@@ -5,39 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مستشفى جلوريا - قريباً</title>
     <style>
+        :root {
+            --dark-blue: #00467F; /* Pantone 654c */
+            --bright-green: #78BE20; /* Pantone 368 cv */
+            --bright-yellow: #FDE100; /* Pantone Yellow c */
+        }
         body {
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            color: #00467f; /* اللون الأزرق الخاص باللوجو */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-blue);
         }
         .container {
             text-align: center;
+            padding: 20px;
+            max-width: 600px;
         }
-        img {
-            max-width: 250px;
+        .logo {
+            max-width: 280px;
+            height: auto;
             margin-bottom: 20px;
         }
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            color: var(--dark-blue);
         }
-        p {
+        .status {
             font-size: 1.2rem;
-            color: #78be20; /* اللون الأخضر */
+            color: var(--bright-green);
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            border-top: 4px solid var(--bright-yellow);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .contact-item {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .contact-item strong {
+            color: var(--dark-blue);
+        }
+        a {
+            color: var(--dark-blue);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--bright-green);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Gloria Hospital Logo">
+        <img src="logo.png" alt="مستشفى جلوريا" class="logo">
+        
         <h1>مستشفى جلوريا</h1>
-        <p>الموقع الإلكتروني قيد الإنشاء.. انتظرونا قريباً</p>
+        <p class="status">الموقع الإلكتروني قيد الإنشاء.. انتظرونا قريباً</p>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>📍 العنوان:</strong>
+                <span>اكتب العنوان هنا بالتفصيل</span>
+            </div>
+            <div class="contact-item">
+                <strong>📞 تليفون:</strong>
+                <a href="tel:0123456789">0123456789</a>
+            </div>
+            <div class="contact-item">
+                <strong>✉️ الإيميل:</strong>
+                <a href="mailto:info@gloriahospital.com">info@gloriahospital.com</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
-
