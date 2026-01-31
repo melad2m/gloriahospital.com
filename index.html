@@ -1,32 +1,172 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مستشفى جلوريا - قريباً</title>
-    <style>
-        body { background-color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: sans-serif; color: #00467f; }
-        .container { text-align: center; padding: 20px; max-width: 500px; }
-        .logo { max-width: 250px; height: auto; margin-bottom: 20px; }
-        .status { color: #78be20; font-weight: bold; margin-bottom: 30px; }
-        .info-box { background: #f9f9f9; padding: 20px; border-radius: 15px; border-top: 5px solid #fde100; text-align: right; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .info-item { margin: 10px 0; font-size: 1.1rem; }
-        a { color: #00467f; text-decoration: none; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="logo.png" alt="Gloria Hospital" class="logo">
-        
-       
-        <p class="status">الموقع الإلكتروني قيد الإنشاء.. انتظرونا قريباً</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مستشفى جلوريا | قريبًا</title>
 
-        <div class="info-box">
-<div class="into-item"> 📍خدمات النرجس فيلات-التجمع الخامس-القاهرة </div>
-            <div class="info-item">الادارة: ١٨١ شارع الحجاز -مصرالجديدة -القاهرة </div>
-            <div class="info-item">📞 <a href="tel:0221813131">+0221813131</a></div>
-            <div class="info-item">✉️ <a href="mailto:info@gloriahospital.com">info@gloriahospital.com</a></div>
+<style>
+:root {
+    --blue: #00467f;
+    --green: #78be20;
+    --light: #f7f9fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Cairo", Arial, sans-serif;
+    background: linear-gradient(180deg, #ffffff, #f3f6f9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+}
+
+.container {
+    background: #fff;
+    max-width: 480px;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.logo {
+    max-width: 220px;
+    margin-bottom: 15px;
+}
+
+.status {
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.card {
+    background: var(--light);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 14px 10px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.call {
+    background: var(--blue);
+    color: #fff;
+}
+
+.whatsapp {
+    background: var(--green);
+    color: #fff;
+}
+
+.actions a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <!-- غيّر logo.png باسم ملف اللوجو عندك -->
+    <img src="logo.png" alt="Gloria Hospital" class="logo">
+
+    <!-- STATUS -->
+    <div class="status">
+        ⏳ الموقع الإلكتروني قيد التطوير — انتظرونا قريبًا
+    </div>
+
+    <!-- INFO -->
+    <div class="card">
+        <div class="item">
+            <div class="icon">📍</div>
+            <div>
+                خدمات النرجس فيلات – التجمع الخامس – القاهرة
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="icon">🏢</div>
+            <div>
+                الإدارة: 181 شارع الحجاز – مصر الجديدة
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="icon">✉️</div>
+            <div>
+                info@gloriahospital.com
+            </div>
         </div>
     </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="actions">
+        <a href="tel:+201159298888" class="call">📞 اتصال مباشر</a>
+        <a href="https://wa.me/201159298888" class="whatsapp">💬 واتساب</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © Gloria Hospital — All Rights Reserved
+    </div>
+
+</div>
+
 </body>
 </html>
